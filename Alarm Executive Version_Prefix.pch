@@ -1,0 +1,60 @@
+//
+// Prefix header for all source files of the 'SlickTime' target in the 'SlickTime' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+
+
+//#import "ParentSettingsCon.h"
+//#import "SlickTimeAppDelegate.h"
+
+
+#define degreesToRadians(x) (M_PI * x / 180.0)
+
+
+#define PORTRAIT_CENTER CGPointMake(160, 240)
+#define PORTRAIT CGRectMake (0,0,320,480)
+#define WINDOW_CENTER del.window.center
+#define FRAMES_PER_SECOND 24
+#define ROTATION_INCREMENT 0.75
+#define CLOUD_INCREMENT 0.75
+
+#define APP_DELEGATE [[UIApplication sharedApplication] delegate]
+#define SCREEN_RESOLUTION [[[UIScreen mainScreen] currentMode] size]
+#define IPHONE4_RESOLUTION CGSizeMake(640, 960)
+#define IPHONE3_OR_BELOW_RESOLUTION CGSizeMake(320, 480)
+#define IPAD_RESOLUTION CGSizeMake(1024, 768)
+#define HI_RES_TEST (SCREEN_RESOLUTION.width == IPHONE4_RESOLUTION.width && SCREEN_RESOLUTION.height == IPHONE4_RESOLUTION.height)
+#define DISCLOSURE_BUTTON_SIZE CGSizeMake(27, 27)
+
+#define DATE_PICKER_FRAME CGRectMake(0, 210, 320, 216)
+#define DATE_PICKER_FRAME_OFF CGRectMake(0, 460, 320, 216)
+
+#define CANCEL_BUTTON_FRAME CGRectMake(7, 221, 54, 33)
+#define CANCEL_BUTTON_FRAME_OFF CGRectMake(7, 460 + 56, 54, 33)
+
+#define DONE_BUTTON_FRAME CGRectMake(259, 221, 54, 33)
+#define DONE_BUTTON_FRAME_OFF CGRectMake(259, 460 + 56, 54, 33)
+
+#define WEEKDAY_STRING_SHORT_LIST @"M", @"T", @"W", @"Th", @"F", @"Sat", @"Sun"
+
+#define SET_ALARM_TABLE_LIST @"Time", @"Repeat", @"Snooze", @"Music", @"Rooster Crow", @"Label" /*, @"Sleep Mode", @"Auto Lock", @"Rooster" */
+#define SET_ALARM_CONTROLLERS_LIST setTimeCon, setRepeatCon, setSnoozeCon, setMusicCon, @"Rooster Crow",  setLabelCon 
+#define SET_ALARM_DETAIL_LABELS_LIST_DEFAULT @"None", @"Off", @"Off", @"None", @"on", @"Good Morning", @"Off", @"Never", @"" /* , @"Off", @"One Minute" */
+#define SET_REPEAT_CON_LABELS_LIST @"Off", @"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", @"Sunday" 
+#define SET_SNOOZE_CON_LIST @"Off", @"1 Minute", @"3 Minutes", @"10 Minutes", @"30 Minutes" 
+#define SET_SLEEP_MODE_CON_LIST @"1 Minute", @"3 Minutes", @"10 Minutes", @"30 Minutes", @"1 Hour", @"Until Alarm"
+#define SET_AUTOLOCK_CON_LIST @"Five Minutes", @"Ten Minutes", @"Fifteen Minutes", @"Thirty Minutes", @"One Hour", @"Never" 
+#define SET_WEATHER_SETTINGS_LIST_0 @"Current Location", @"City", @"Zip"
+#define SET_WEATHER_SETTINGS_LIST_1 @"Fahrenheit", @"Celsius"
+#define ALARM_SOUND_LIST  @"Alarm", @"Alarm Modern", @"Band", @"Blue", @"Child", @"Chinese", @"Club", @"Cow Moo", @"Drum", @"Fog Horn", @"Forest", @"Funny", @"Future", @"Guitar", @"Hiphop", @"Lounge", @"Music box", @"Old Telephone", @"Piano", @"Quack", @"Relax", @"Remix", @"Rhythm", @"Rooster", @"Sea", @"Thunder"
+
+#define WHITE_NOISE_LIST @"Running Water", @"Crickets", @"Rain"
+
+#define DETAIL_LABEL_FONT [UIFont fontWithName:@"Helvetica" size:14]
+#define SLICK_TIME_DETAIL_LABEL_FONT [UIFont fontWithName:@"Helvetica" size:17]
+#define SLICK_TIME_BLUE_COLOR   [UIColor colorWithRed:0.0 green:174.0/255.0 blue:239.0/255.0 alpha:1.0]
